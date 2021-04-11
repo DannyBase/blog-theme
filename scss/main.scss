@@ -1,7 +1,6 @@
 @import "config";
 @import "utilities";
 
-
 * {
   padding: 0;
   margin: 0;
@@ -11,10 +10,12 @@
 body {
   line-height: 1.4;
   background-color: $dark-color;
+  text-transform: capitalize;
 }
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -38,7 +39,7 @@ img {
 
 header {
   .nav-bar {
-    padding-top: 1rem;
+    padding-top: 1.6rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -49,8 +50,7 @@ header {
       align-items: center;
 
       .write {
-        color: $white-color;
-
+        font-size: 1rem;
       }
 
       .nav-list {
@@ -59,11 +59,20 @@ header {
         justify-content: center;
         gap: 0.7rem;
 
-        &-item {
-          &-link {
+        .nav-item {
+          .nav-link {
             color: $white-color;
             font-size: 1.3rem;
+          }
 
+          &:last-child {
+            align-self: start;
+            @include ease-in-out;
+
+            &:hover{
+              transform: scale(0.8);
+              color: $primary-color;
+            }
           }
         }
       }
@@ -75,21 +84,140 @@ header {
         justify-content: center;
         align-items: center;
         gap: 1.2rem;
-        text-transform: capitalize;
 
-        &-item {
-          &-link {
+        .nav-item {
+          .nav-link {
             font-size: 1.2rem;
-            color: $white-color;
-            transition: color 1.5s ease-in-out;
-
+            color: $accent-color;
+             @include ease-in-out;
+             transition-property: color;
             &:hover {
-              color: $accent-color;
+              color: $white-color;
+              transform: scale(0.8);
             }
 
             &.current {
-              color: $accent-color;
+              color: $white-color;
+              transform: scale(0.8);
             }
+          }
+        }
+      }
+    }
+  }
+
+  .blog-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    color: $white-color;
+
+    .blog-txt {
+      max-width: 700px;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .blog-social {
+      align-self: start;
+
+      a {
+        font-size: 1.2rem;
+        margin-right: 6px;
+        color: #ff0000;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        padding: 0.5rem;
+        display: inline-flex;
+        @include ease-in-out;
+
+        &:first-child {
+          color: #1da1f2;
+        }
+
+        &:hover {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+
+  .blog-search-category {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 1rem;
+
+    .input-wrapper {
+      flex-grow: 1;
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 1rem 0.8rem;
+        padding-left: 1.9rem;
+        border-radius: 99999px;
+        border: none;
+        outline: none;
+        background-color: $secondary-color;
+        font-size: 1.2rem;
+        color: $white-color;
+
+        &::placeholder {
+          color: $white-color;
+          font-size: 1.2rem;
+        }
+      }
+
+      .search-icon {
+        position: absolute;
+        top: 15px;
+        left: 7px;
+        color: $white-color;
+        display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        padding-left: 0.2rem;
+      }
+    }
+
+    .category-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: .7rem;
+
+      .category-item {
+        .category-link {
+          display: inline-block;
+          padding: 0.5rem 0.7rem;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          border-radius: 99999px;
+          font-size: 1.2rem;
+          color: $white-color;
+          color: $accent-color;
+          @include ease-in-out;
+
+          &:hover {
+            background-color: $primary-color;
+
+            color: $white-color;
+          }
+
+          &.current{
+            background-color: $primary-color;
+            color: $white-color;
           }
         }
       }

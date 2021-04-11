@@ -5,4 +5,9 @@ $secondary-color:#242424;
 $dark-color:#141414;
 $white-color: #ffffff;
 $accent-color: #b1b1b1;
-$container-width:1000px;
+$container-width:1200px;
+
+
+@mixin ease-in-out{
+    transition: all 1.5s ease-in-out;
+}
