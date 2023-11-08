@@ -1,0 +1,68 @@
+.container {
+  max-width: $container-width;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+// buttons
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 99999px;
+  color: $white-color;
+  font-size: 1.2rem;
+  transition: all 1.4s ease-in-out;
+}
+
+.btn {
+  &-outline {
+    @extend %btn-shared;
+    border: 2px solid $white-color;
+    background: none;
+
+    &:hover {
+      border: none;
+      background-color: $primary-color;
+    }
+  }
+
+  &-light {
+    @extend %btn-shared;
+    background: $white-color;
+    color: $secondary-color;
+
+    &:hover {
+      border: none;
+      color: $white-color;
+      background-color: $primary-color;
+    }
+  }
+
+  &-primary{
+    @extend %btn-shared;
+    background: $primary-color;
+    color: $white-color;
+
+    &:hover {
+      border: none;
+      color: $secondary-color;
+      background-color: $white-color;
+    }
+  }
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+.lead{
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
+}
+
+
