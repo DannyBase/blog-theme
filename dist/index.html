@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome To Blogly</title>
+    <link
+  rel="stylesheet"
+  href="css/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/main.css" />
+
     <script defer src="js/all.min.js"></script>
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- header -->
     <header>
       <!-- container -->
@@ -19,7 +24,7 @@
             <a href="" class="btn-light write">
               <i class="fa fa-pen"></i> write article
             </a>
-            <h3 class="logo">blogly</h3>
+            <h3 class="logo txt-light">blogly</h3>
             <ul class="nav-list">
               <li class="nav-item">
                 <a href="" class="nav-link">
@@ -56,58 +61,274 @@
       </div>
       <!-- navbar -->
 
-      <div class="container"> 
-      <div class="blog-info">
-        <div class="blog-txt">
-          <h2>Discover nice article here</h2>
-          <p>Lorem ipsum dolor sit amet consectetur
-             adipisicing elit. Accusamus, quisquam. Modi ullam fugiat 
-             totam ex voluptatum soluta inventore delectus! Earum!Lorem ipsum dolor sit amet 
-             consectetur adipisicing elit. Accusamus, quisquam. Modi ullam fugiat totam ex 
-             voluptatum soluta inventore delectus! Earum!</p>
-        </div>
-        <div class="blog-social">
-         <a href=""><i class="fab fa-twitter"></i></a>
-         <a href=""><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
-
-    <div class="blog-search-category">
-          <div class="input-wrapper">
-            <input type="text" placeholder="search...">
-            <i class="fa fa-search search-icon"></i>
+      <div class="container">
+        <div class="blog-info my-3">
+          <div class="blog-txt">
+            <h2>Discover nice article here</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, quisquam. Modi ullam fugiat totam ex voluptatum soluta
+              inventore delectus! Earum!Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Accusamus, quisquam. Modi ullam fugiat totam ex
+              voluptatum soluta inventore delectus! Earum!
+            </p>
           </div>
-      <ul class="category-list">
-        <li class="category-item">
-          <a href="" class="category-link">all</a>
-        </li>
-        <li class="category-item">
-          <a href="" class="category-link">lifestyle</a>
-        </li>
-        <li class="category-item">
-          <a href="" class="category-link current">technology</a>
-        </li>
-        <li class="category-item">
-          <a href="" class="category-link">sport</a>
-        </li>
-        <li class="category-item">
-          <a href="" class="category-link">fashion</a>
-        </li>
-        <li class="category-item">
-          <a href="" class="category-link">programming</a>
-        </li>
-        <li class="category-item">
-          <a href="" class="category-link">food</a>
-        </li>
-        <li class="category-item">
-          <a href="" class="category-link">manifacturing</a>
-        </li>
-      </ul>
-    </div>
+          <div class="blog-social">
+            <a href="" class="bg-secondary"><i class="fab fa-twitter bg-secondary-color"></i></a>
+            <a href="" class="bg-secondary"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="blog-search-category">
+          <div class="input-wrapper">
+            <input type="text"  placeholder="search..." class="bg-secondary txt-light"/> 
+            <i class="fa fa-search search-icon txt-light"></i>
+          </div>
+          <ul class="category-list">
+            <li class="category-item">
+              <a href="" class="category-link">all</a>
+            </li>
+            <li class="category-item">
+              <a href="" class="category-link">lifestyle</a>
+            </li>
+            <li class="category-item">
+              <a href="" class="category-link current">technology</a>
+            </li>
+            <li class="category-item">
+              <a href="" class="category-link">sport</a>
+            </li>
+            <li class="category-item">
+              <a href="" class="category-link">fashion</a>
+            </li>
+            <li class="category-item">
+              <a href="" class="category-link">programming</a>
+            </li>
+            <li class="category-item">
+              <a href="" class="category-link">food</a>
+            </li>
+            <li class="category-item">
+              <a href="" class="category-link">manifacturing</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- header -->
 
+    <!-- section A carousel -->
+    <section id="home-a" class="my-3">
+       <div class="container">
+
+        <h2 class="carousel-title text-center txt-light">articles</h2>
+
+           
+            <!-- Swiper -->
+           <div class="swiper" id="article-swiper">
+            <!-- swiper wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" alt="" class="article-img">
+                <div class="user-info">
+                  <div class="wrapper">
+                    <a href=""> 
+                      <div class="inner"> 
+                    <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="user-img" alt="" />
+                    <p class="username">daniel james</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              <div class="caro-title-message text-center"> 
+                <h2 class=" article-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quam.
+                </h2>
+                <p class="article-message text-center px-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam dicta obcaecati soluta quisquam ipsa atque in sint veritatis repudiandae tenetur ea dignissimos, id nemo velit? Voluptatum, praesentium voluptas? Repellendus quaerat inventore quibusdam nihil placeat tenetur officiis reiciendis excepturi rem<a href="" class="txt-primary">read more</a>
+                </p>
+              </div>
+              </div>
+              <div class="swiper-slide ">
+                <img src="/dist/img/desktop-design.jpg" class="article-img" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/dist/img/death_valley-wallpaper-1280x1024.jpg" class="article-img" alt="">
+              </div>
+              <div class="swiper-pagination">
+              </div>
+            </div>
+            <!-- swiper wrapper -->
+           </div>
+            <!-- Swiper -->
+       </div>
+    </section>
+    <!-- section A carousel -->
+
+    <!-- section b article cards -->
+
+    <section id="home-b" class="my-3">
+      <!-- container -->
+      <div class="container">
+        <!-- article cards -->
+        <div class="article-cards">
+        <!-- article -->
+          <div class="article">
+            <div class="img-wrapper">
+              <a href=""> 
+              <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="article-img" alt="" />
+            </a>
+              <img src="/dist/img/icons8-fire-64.png" class="fire-icon" alt="" />
+              <div class="user-info">
+                <div class="wrapper">
+                  <a href=""> 
+                    <div class="inner"> 
+                  <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="user-img" alt="" />
+                  <p class="username">daniel james</p>
+                </div>
+              </a>
+              </div>
+            </div>
+              </div>
+              <a href=""> 
+               <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+              </a>
+              <p class="article-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate optio excepturi fugit, molestiae labore maxime quae
+                velit ratione quos accusantium...
+              </p>
+              <div class="date-views">
+                <p class="date"><i class="fa fa-calendar"></i> 2020/09/22</p>
+                <p class="date"><i class="fa fa-comment"></i> 44</p>
+                <p class="views"><i class="fa fa-eye"></i> 10K viewers</p>
+              </div>
+              <a href="" class="btn-outline text-center">read more</a>
+          </div>
+        <!-- article -->
+
+        <div class="article">
+          <div class="img-wrapper">
+            <a href=""> 
+            <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="article-img" alt="" />
+          </a>
+            <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="fire-icon" alt="" />
+            <div class="user-info">
+              <div class="wrapper">
+                <a href=""> 
+                <div class="inner"> 
+              <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="user-img" alt="" />
+              <p class="username">daniel james</p>
+            </div>
+          </a>
+            </div>
+          </div>
+            </div>
+            <a href=""> 
+             <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+            </a>
+            <p class="article-message">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate optio excepturi fugit, molestiae labore maxime quae
+              velit ratione quos accusantium...
+            </p>
+            <div class="date-views">
+              <p class="date"><i class="fa fa-calendar"></i> 2020/09/22</p>
+              <p class="date"><i class="fa fa-comment"></i> 44</p>
+              <p class="views"><i class="fa fa-eye"></i> 10K viewers</p>
+            </div>
+            <a href="" class="btn-outline text-center">read more</a>
+        </div>
+      <!-- article -->
+    
+       
+      <div class="article">
+        <div class="img-wrapper">
+          <a href=""> 
+          <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="article-img" alt="" />
+        </a>
+          <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="fire-icon" alt="" />
+          <div class="user-info">
+            <div class="wrapper">
+              <a href=""> 
+              <div class="inner"> 
+            <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" class="user-img" alt="" />
+            <p class="username">daniel james</p>
+          </div>
+        </a>
+          </div>
+        </div>
+          </div>
+          <a href=""> 
+           <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+          </a>
+          <p class="article-message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate optio excepturi fugit, molestiae labore maxime quae
+            velit ratione quos accusantium...
+          </p>
+          <div class="date-views">
+            <p class="date"><i class="fa fa-calendar"></i> 2020/09/22</p>
+            <p class="date"><i class="fa fa-comment"></i> 44</p>
+            <p class="views"><i class="fa fa-eye"></i> 10K viewers</p>
+          </div>
+          <a href="" class="btn-outline text-center">read more</a>
+      </div>
+    <!-- article -->
+        
+
+        </div>
+        <!-- article cards -->
+      </div>
+      <!-- container -->
+    </section>
+
+
+     <!-- section C pagination -->
+     <section id="home-c" class="my-2"> 
+      <div class="container">
+        <!-- pagination -->
+        <div class="pagination">
+        <button class="btn-outline">
+          <i class="fa fa-arrow-left"></i>
+        </button>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a href="" class="pagination-link">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-link">2</a>
+          </li>
+          
+          <li class="pagination-item">
+            <a href="" class="pagination-link">3</a>
+          </li>
+
+          <li class="pagination-item">
+            <a href="" class="pagination-link">4</a>
+          </li>
+
+          <li class="pagination-item">
+            <a href="" class="pagination-link current">5</a>
+          </li>
+
+          <li class="pagination-item">
+            <a href="" class="pagination-link">6</a>
+          </li>
+
+          <li class="pagination-item">
+            <a href="" class="pagination-link">7</a>
+          </li>
+
+        </ul>
+        <button class="btn-outline">
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- pagination -->
+      </div>
+     </section>
+   
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+
   </body>
 </html>
