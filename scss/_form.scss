@@ -1,0 +1,160 @@
+#fill-form {
+  .form-title {
+    font-size: 2.5rem;
+  }
+
+  .form-msg {
+    font-size: 1.2rem;
+  }
+
+  .btn-wrapper {
+    text-align: end;
+    button {
+      width: fit-content;
+      animation: shake 0.2s ease-in-out infinite;
+      transform-origin: center;
+
+      @keyframes shake {
+        50% {
+          transform: rotate(-3deg);
+        }
+        100% {
+          transform: rotate(3deg);
+        }
+      }
+    }
+  }
+
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+    input,
+    textarea ,select{
+      color: $dark-color;
+      &::placeholder {
+        color: $dark-color;
+      }
+    }
+
+    .fa-user,
+    .fa-envelope,
+    .fa-lock,
+    .fa-eye,
+    .undefine{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2%;
+      font-size: 1.2rem;
+    }
+
+    .fa-eye {
+      left: initial;
+      right: 3%;
+    }
+
+
+    textarea {
+      border-radius: 0.4rem;
+    }
+
+
+    .custom-select{
+
+      option{
+        &:hover{
+          background-color: $primary-color;
+        }
+      }
+  
+  
+      
+      
+    }
+
+
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  .user-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+
+    a {
+      font-size: 1.2rem;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .custom-checkbox-wrapper{ 
+    margin-top: .4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .input-wrapper{
+      margin-bottom: .9rem;
+    }
+
+  .custom-checkbox + label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .custom-checkbox {
+    width: fit-content;
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+  }
+
+  .custom-checkbox + label::before {
+    content: "";
+    width: 1.2em;
+    height: 1.2em;
+    padding: .6rem;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    background-color: $white-color;
+  }
+
+  .custom-checkbox + label:hover::before {
+    background-color: $primary-color;
+  }
+
+  .custom-checkbox:checked + label::before {
+    content: "✔";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: $white-color;
+  }
+
+}
+}

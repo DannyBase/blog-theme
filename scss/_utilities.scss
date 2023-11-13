@@ -4,116 +4,114 @@
   margin: auto;
 }
 
+.form-container{
+  max-width:$medium-container-width;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
 // padding
-.py{
-  &-1{
+.py {
+  &-1 {
     padding: 1rem 0;
   }
-  &-2{
+  &-2 {
     padding: 2rem 0;
   }
-  &-3{
+  &-3 {
     padding: 3rem 0;
   }
-  &-4{
+  &-4 {
     padding: 4rem 0;
   }
 }
 
-
-.px{
-  &-1{
+.px {
+  &-1 {
     padding: 0 1rem;
   }
-  &-2{
+  &-2 {
     padding: 0 2rem;
   }
-  &-3{
+  &-3 {
     padding: 0 3rem;
   }
-  &-4{
-    padding:0 4rem;
+  &-4 {
+    padding: 0 4rem;
   }
 }
 
 // padding
 
-
-
 // margin
-.my{
-  &-1{
+.my {
+  &-1 {
     margin: 1rem 0;
   }
-  &-2{
+  &-2 {
     margin: 2rem 0;
   }
-  &-3{
+  &-3 {
     margin: 3rem 0;
   }
-  &-4{
+  &-4 {
     margin: 4rem 0;
   }
 }
 
-
-.mx{
-  &-1{
+.mx {
+  &-1 {
     margin: 0 1rem;
   }
-  &-2{
+  &-2 {
     margin: 0 2rem;
   }
-  &-3{
+  &-3 {
     margin: 0 3rem;
   }
-  &-4{
-    margin:0 4rem;
+  &-4 {
+    margin: 0 4rem;
   }
 }
 
 // margin
 
-
 // background
-.bg{
-  &-dark{
+.bg {
+  &-dark {
     background-color: $dark-color;
   }
-  &-light{
+  &-light {
     background-color: $white-color;
   }
-  &-secondary{
+  &-secondary {
     background-color: $secondary-color;
   }
-  &-primary{
+  &-primary {
     background-color: $primary-color;
   }
-  &-accent{
+  &-accent {
     background-color: $accent-color;
   }
 }
 
-
-.txt{
-  &-dark{
+.txt {
+  &-dark {
     color: $dark-color;
   }
-  &-light{
+  &-light {
     color: $white-color;
   }
-  &-secondary{
+  &-secondary {
     color: $secondary-color;
   }
-  &-primary{
+  &-primary {
     color: $primary-color;
   }
-  &-accent{
+  &-accent {
     color: $accent-color;
   }
 }
-
-
 
 // buttons
 
@@ -126,6 +124,7 @@
   border-radius: 9999px;
   color: $white-color;
   font-size: 1.1rem;
+  text-transform: capitalize;
   @include ease-in-out;
 }
 
@@ -167,6 +166,16 @@
       background-color: $white-color;
     }
   }
+
+  &-secondary {
+    @extend %btn-shared;
+    background: $secondary-color;
+    color: $white-color;
+
+    &:hover {
+     opacity: 0.7;
+    }
+  }
 }
 
 .text-center {
@@ -184,27 +193,63 @@
   margin: 18px 0;
 }
 
+.article {
+  .img-wrapper {
+    position: relative;
+    width: 100%;
+
+    .article-img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .fire-icon {
+      position: absolute;
+      width: 35px;
+      border-radius: 50%;
+      top: 6%;
+      right: 5%;
+    }
+  }
+
+  .article-title {
+    color: $white-color;
+  }
+  .date-views {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 15px;
+    color: $accent-color;
+  }
+}
+
 .article-message {
   color: $accent-color;
   margin-bottom: 15px;
 }
 
-
-input {
+input,textarea,select{
   width: 100%;
   padding: 1rem 0.6rem;
-  padding-left: 2rem;
+  padding-left: 2.7rem;
   border-radius: 99999px;
   border: none;
   outline: none;
   font-size: 1.2rem;
+  text-transform: capitalize;
 
   &::placeholder {
     color: $accent-color;
     font-size: 1.2rem;
+    padding-left: .2rem;
   }
-
 }
+
+
+
+
 
 .user-info {
   position: absolute;
@@ -229,12 +274,64 @@ input {
 
       .user-img {
         width: 40px;
+        height: 40px;
         border-radius: 50%;
       }
 
       .username {
         font-size: 1.2rem;
         color: $secondary-color;
+      }
+    }
+  }
+}
+
+
+
+.new-letter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .new-info{
+    
+    h1{
+      font-size: 2rem;
+    }
+  }
+
+
+  form {
+    flex-grow: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+
+    label {
+      padding-left: 1rem;
+    }
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .inner-input-wrapper {
+        position: relative;
+        width: 100%;
+
+        input {
+          width: 100%;
+
+        }
+
+        .email {
+          position: absolute;
+          top: 50%;
+          left: 3%;
+          font-size: 1.2rem;
+          transform: translateY(-50%);
+        }
       }
     }
   }
