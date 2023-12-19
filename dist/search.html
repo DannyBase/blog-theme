@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search For Article</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script defer src="js/all.min.js"></script>
+  </head>
+  <body class="bg-dark search-page">
+    <form action="" id="fill-form">
+      <div class="container-lg">
+        <h1 class="txt-light mx-1 text-center">search</h1>
+
+        <div class="pull-left mx-1 go-back"> 
+          <a href="" class="txt-primary close">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+  
+        </div>
+
+        <div class="input-search real-search">
+          <input
+            type="text"
+            placeholder="search blogly"
+            class="bg-secondary txt-light"
+            id="search-something"
+            oninput="toggleCancleButton()"
+          />
+          <i class="fa fa-search search-icon txt-light"></i>
+          <button
+            onclick="clearInput()"
+            class="clear-input rest-width txt-light"
+          >
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="search-list">
+          <a href="index.html"> 
+         <div class="search-item" data-tag="user">
+          <img src="/dist/img/avatars/avatar-male-3.jpg" alt="">
+          <div class="searched-details">
+            <h4>brad james</h4>
+            <small>all article | <span>1</span></small>
+          </div>
+        </div>
+      </a>
+      <a href="index.html"> 
+        <div class="search-item" data-tag="user">
+         <img src="/dist/img/avatars/avatar-male-1.jpg" alt="">
+         <div class="searched-details">
+           <h4>paul max</h4>
+           <small>all article | <span>11</span></small>
+         </div>
+       </div>
+     </a>
+     <a href="index.html"> 
+      <div class="search-item" data-tag="article">
+       <div class="searched-details">
+         <h4>goodlife</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officia asperiores enim recusandae iure, facere explicabo qui hic ipsa in magni culpa molestiae aliquid doloribus quos labore accusantium totam. Eaque....</p>
+         <small>added by brany hink | <span>may 20 2024</span></small>
+       </div>
+     </div>
+   </a>
+   <a href="index.html"> 
+    <div class="search-item">
+     <img src="/dist/img/avatars/avatar-male-2.jpg" alt="">
+     <div class="searched-details">
+       <h4>davis ben</h4>
+       <small>all article | <span>400</span></small>
+     </div>
+   </div>
+ </a>
+
+ <a href="index.html"> 
+  <div class="search-item" >
+   <div class="searched-details">
+     <h4>ai world</h4>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illum deserunt temporibus voluptates dolorem laborum deleniti voluptatem nobis minus culpa dolores inventore sunt ad est quasi eos, ratione tempore debitis....</p>
+     <small>added by davis pet | <span>august 23 2001</span></small>
+   </div>
+ </div>
+</a>
+
+<a href="index.html"> 
+  <div class="search-item" >
+   <div class="searched-details">
+     <h4>gaza war</h4>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illum deserunt temporibus voluptates dolorem laborum deleniti voluptatem nobis minus culpa dolores inventore sunt ad est quasi eos, ratione tempore debitis....</p>
+     <small>added by rose white | <span>may 19 2013</span></small>
+   </div>
+ </div>
+</a>
+
+<a href="index.html"> 
+  <div class="search-item">
+   <img src="/dist/img/avatars/avatar-female-1.jpg" alt="">
+   <div class="searched-details">
+     <h4>joy smith</h4>
+     <small>all article | <span>400</span></small>
+   </div>
+ </div>
+</a>
+
+
+        </div>
+      </div>
+    </form>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,160 +1,244 @@
+// all form
 #fill-form {
+
+
   .form-title {
     font-size: 2.5rem;
   }
 
-  .form-msg {
-    font-size: 1.2rem;
-  }
+  
 
-  .btn-wrapper {
-    text-align: end;
-    button {
-      width: fit-content;
-      animation: shake 0.2s ease-in-out infinite;
-      transform-origin: center;
-
-      @keyframes shake {
-        50% {
-          transform: rotate(-3deg);
-        }
-        100% {
-          transform: rotate(3deg);
-        }
-      }
-    }
-  }
-
-  .input-wrapper {
+  // all input, select, textarea inside a form
+  .form-group {
     position: relative;
     margin-bottom: 1.5rem;
     input,
-    textarea ,select{
+    textarea,
+    select{
+      background-color: $white-color;
       color: $dark-color;
       &::placeholder {
         color: $dark-color;
       }
     }
 
+    input[type="email"]{
+      text-transform: none;
+
+      &::placeholder{
+        text-transform: capitalize;
+      }
+    }
+
+    
+    textarea {
+      resize: none;
+      min-height: 100px;
+      max-height: 200px;
+      font-size: 1.2rem;
+
+
+      &::placeholder {
+        font-family:inherit;
+      }
+
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        background-color: $primary-color;
+        border-radius: 1rem;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: $accent-color;
+        border-radius: 1.4rem;
+      }
+
+    }
+
+    // icon inside inputs
     .fa-user,
     .fa-envelope,
     .fa-lock,
-    .fa-eye,
-    .undefine{
+    .btn-eye,
+    .undefine {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      left: 2%;
+      transform: translateY(-50%) translateX(50%);
+      left: 1%;
       font-size: 1.2rem;
     }
 
-    .fa-eye {
+    .btn-eye {
       left: initial;
-      right: 3%;
+      right: 1.5%;
+      transform: translateY(-50%) translateX(-30%);
+      border: none;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      
+
+    }
+
+    .btn-eye-1,.btn-eye-2{
+      display: none;
     }
 
 
-    textarea {
-      border-radius: 0.4rem;
+    .fa-message,.pen{
+      top: 13%;
+      
     }
 
+    // icon inside inputs
 
-    .custom-select{
 
-      option{
-        &:hover{
+    // select 
+    .custom-select {
+      option {
+        &:hover {
           background-color: $primary-color;
         }
       }
-  
-  
-      
-      
     }
-
-
-  }
-
-  button {
-    width: 100%;
-    margin-bottom: 1.4rem;
-  }
-
-  h4 {
-    font-size: 1.2rem;
-  }
-
-  .user-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+    // select 
 
   }
 
-  p {
+  
+  //  all label in a form
+  label{
+    display: block;
+    margin: .5rem;
+  }
+
+
+   
+  // used in registraction page , login page , reset password page 
+    //  already have an account, don't have an account link
+  .next-form{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
     gap: 0.3rem;
-    font-size: 1.2rem;
 
-    a {
-      font-size: 1.2rem;
-
+    a { 
       &:hover {
         opacity: 0.7;
       }
     }
   }
 
-  .custom-checkbox-wrapper{ 
+  // all select inside a form 
+  .custom-checkbox-wrapper {
     margin-top: .4rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 
-
-    .input-wrapper{
-      margin-bottom: .9rem;
+    .form-group {
+      margin-bottom: .1rem;
     }
 
-  .custom-checkbox + label {
-    display: flex;
+    .custom-checkbox + label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .custom-checkbox {
+      width: fit-content;
+      position: absolute;
+      left: -9999px;
+      opacity: 0;
+    }
+
+    .custom-checkbox + label::before {
+      content: "";
+      width: 1.2em;
+      height: 1.2em;
+      padding: 0.7rem;
+      margin-right: 0.5em;
+      border-radius: 50%;
+      background-color: $white-color;
+    }
+
+    .custom-checkbox + label:hover::before {
+      background-color: $primary-color;
+    }
+
+    .custom-checkbox:checked + label::before {
+      content: "✔";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-color;
+      color: $white-color;
+    }
+  }
+  // all select inside a form 
+
+
+
+  // for remember me and forget password
+  .wrapper-login {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    cursor: pointer;
   }
 
-  .custom-checkbox {
-    width: fit-content;
-    position: absolute;
-    left: -9999px;
-    opacity: 0;
+  // for remember me and forget password
+
+
+
+  // for edit user profile
+  .grid-inputs{
+    margin-top: 2.3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.6rem;
+    
   }
 
-  .custom-checkbox + label::before {
-    content: "";
-    width: 1.2em;
-    height: 1.2em;
-    padding: .6rem;
-    margin-right: 0.5em;
-    border-radius: 50%;
-    background-color: $white-color;
-  }
-
-  .custom-checkbox + label:hover::before {
-    background-color: $primary-color;
-  }
-
-  .custom-checkbox:checked + label::before {
-    content: "✔";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $primary-color;
-    color: $white-color;
-  }
+  // for edit user profile
 
 }
+
+// all form
+
+
+
+// register form
+.register{
+  .next-form{
+    margin-top: 2.2vh;
+
+  }
 }
+
+// register form
+
+
+// login form
+.login{
+  .next-form{
+    margin-top: 22vh;
+
+  }
+}
+// login form
+
+
+ //  reset password form
+.reset{
+  .next-form{
+    margin-top: 46vh;
+
+  }
+}
+ //  reset password form

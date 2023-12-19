@@ -4,39 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome To Blogly</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
-    <script defer src="js/all.min.js"></script>
+    <script defer src="../js/all.min.js"></script>
   </head>
   <body class="bg-dark">
-
+    
     <!-- header start -->
     <header>
       <!-- container start -->
       <div class="container">
         <!-- navbar  start -->
         <nav class="nav-bar">
-          <a href="index.html"> 
+          <a href="../index.html"> 
             <h3 class="logo">blogly</h3>
-            
           </a>
           <ul class="hide-md">
             <button class="btn-normal rest-width hide-lg" onclick="hideNav()">
               <i class="fa fa-times"></i>
             </button>
             <li>
-              <a href="index.html">home</a>
+              <a href="../index.html">home</a>
             </li>
             <li>
-              <a href="categories.html">categories</a>
+              <a href="../categories.html">categories</a>
             </li>
             <li>
-              <a href="about.html">about us</a>
+              <a href="../about.html">about us</a>
             </li>
             <li>
-              <a href="contact.html">contact us</a>
+              <a href="../contact.html">contact us</a>
             </li>
           </ul>
           <ul>
@@ -46,7 +45,7 @@
               </button>
             </li>
             <li>
-              <a href="user/">
+              <a href="#">
                 <img
                   src="/dist/img/avatars/avatar-female-2.jpg"
                   alt="user image"
@@ -54,7 +53,7 @@
               </a>
             </li>
             <li class="notification">
-              <a href="user/notification.html">
+              <a href="notification.html">
                 <i class="fa fa-bell bell"></i>
                 <span></span>
               </a>
@@ -82,97 +81,104 @@
     </header>
     <!-- header end -->
 
-    
-    
+
+
+
     <!-- main start -->
     <main>
 
-
-      <!-- home hero start -->
-      <section id="home-hero">
-        
-      <!-- container end -->
-        
+    <!-- container start -->
       <div class="container">
 
-        <div class="hero">
-          <div class="blog-info my-3">
-            <div class="blog-txt">
-              <h2>Discover nice article here</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus, quisquam. Modi ullam fugiat totam ex voluptatum
-                soluta inventore delectus! Earum!Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Accusamus, quisquam. Modi ullam
-                fugiat totam ex voluptatum soluta inventore delectus! Earum!
-              </p>
-            </div>
-            <div class="blog-social">
-              <a href="" class="bg-secondary"
-                ><i class="fab fa-twitter bg-secondary-color"></i
-              ></a>
-              <a href="" class="bg-secondary"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-
-          <ul class="category-list">
-            <li class="category-item">
-              <a href="" class="category-link">all</a>
+        <!-- profile nav -->
+        <nav class="profile-nav">
+          <ul>
+            <li>
+              <a href="#" class="current"><i class="fa fa-user"></i> profile</a>
             </li>
-            <li class="category-item">
-              <a href="" class="category-link">lifestyle</a>
+            <li>
+              <a href="settings.html"><i class="fa fa-gear"></i> settings</a>
             </li>
-            <li class="category-item">
-              <a href="" class="category-link current">technology</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">sport</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">fashion</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">programming</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">food</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">manifacturing</a>
+            <li>
+              <a href="../login.html"><i class="fa fa-sign-out"></i> logout</a>
             </li>
           </ul>
-        </div>
 
-      <!-- container end -->
+          <!-- profile nav -->
+        </nav>
 
+    <!-- container end -->
       </div>
 
-      <!-- home hero end -->
-    </section>
 
-      
-      <!-- home article cards start -->
+    <!-- user pofile -->
+      <section id="user-profile">
 
-      <section id="home-article-cards" class="my-3">
-        <!-- container -->
+    <!-- container start -->
         <div class="container">
-          <!-- article cards -->
+
+          <!-- details -->
+          <div class="details">
+            <div class="profile-pic-wrapper">
+              <img
+                src="/dist/img/avatars/avatar-female-2.jpg"
+                alt=""
+                class="profile-pic preview"
+              />
+              <label for="profile-picture" class="edit-img rest-width">
+                <i class="fa fa-camera"></i>
+              </label>
+              <input type="file" id="profile-picture"/>
+            </div>
+
+            <h1>mary jane</h1>
+            <ul class="social-links">
+              <li>
+                <a href=""> <i class="fab fa-facebook"></i> </a>
+              </li>
+              <li>
+                <a href=""> <i class="fab fa-twitter"></i> </a>
+              </li>
+              <li>
+                <a href=""> <i class="fab fa-instagram"></i> </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-envelope"></i> </a>
+              </li>
+            </ul>
+            <p class="txt-center txt-accent">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              incidunt ipsam cupiditate eligendi neque nemo nihil rerum officia
+              similique temporibus. Ea corrupti tempore eveniet veritatis quos
+              fuga esse officia provident.
+            </p>
+            <a href="edit-profile.html">
+              <button class="btn-primary rest-width my-1">
+                <i class="fa fa-edit"></i> edit profile
+              </button>
+            </a>
+          </div>
+          <!-- details -->
+
+          <h3 class="mx-1">all articles</h3>
+
+          <!-- article cards  start-->
           <div class="article-cards">
+            
             <!-- article -->
             <div class="article">
               <div class="img-wrapper">
-                <a href="article.html">
+                <a href="">
                   <img
-                    src="/dist/img/articles/death_valley-wallpaper-1280x1024.jpg"
+                    src="/dist/img/articles/chicago_skyline_night-wallpaper-1280x1024.jpg"
                     class="article-img"
                     alt=""
                   />
                 </a>
-                  <button class="btn-normal rest-width ellipsis">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
+                <button class="btn-normal rest-width ellipsis">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
                 <div class="functions">
-
                   <button class="ed btn-normal rest-width">
                     <i class="fa fa-edit"></i> edit
                   </button>
@@ -182,41 +188,46 @@
                 </div>
                 <div class="user-info">
                   <div class="wrapper">
-                    <a href="user/">
+                    <a href="">
                       <div class="inner">
                         <img
-                          src="/dist/img/avatars/avatar-male-3.jpg"
+                          src="/dist/img/avatars/avatar-female-2.jpg"
                           class="user-img"
                           alt=""
                         />
-                        <p class="username">daniel james</p>
+                        <p class="username">mary jane</p>
                       </div>
                     </a>
                   </div>
                 </div>
               </div>
-              <a href="article.html">
+              <a href="">
                 <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
               </a>
               <p class="article-message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate optio excepturi fugit, molestiae labore maxime quae
-                velit ratione quos accusantium...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                ullam?
               </p>
+
+              <p class="status">status: <span>draft</span></p>
+
               <div class="date-views">
                 <p class="date"><i class="fa fa-calendar"></i> 2020/09/22</p>
                 <p class="date"><i class="fa fa-comment"></i> 44</p>
                 <p class="views"><i class="fa fa-eye"></i> 10K viewers</p>
               </div>
-              <a href="article.html" class="btn-outline txt-center">read more</a>
+
+              <a href="" class="btn-outline txt-center">read more</a>
             </div>
             <!-- article -->
 
+
+            <!-- article -->
             <div class="article">
               <div class="img-wrapper">
-                <a href="article.html">
+                <a href="">
                   <img
-                    src="/dist/img/articles/chair_and_plants-wallpaper-1280x1024.jpg"
+                    src="/dist/img/articles/holiday_villa-wallpaper-1280x1024.jpg"
                     class="article-img"
                     alt=""
                   />
@@ -224,52 +235,57 @@
                 <button class="btn-normal rest-width ellipsis">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
                 </button>
-              <div class="functions">
-
-                <button class="ed btn-normal rest-width">
-                  <i class="fa fa-edit"></i> edit
-                </button>
-                <button class="del btn-normal rest-width">
-                  <i class="fa fa-trash"></i> delete
-                </button>
-              </div>
+                <div class="functions">
+                  <button class="ed btn-normal rest-width">
+                    <i class="fa fa-edit"></i> edit
+                  </button>
+                  <button class="del btn-normal rest-width">
+                    <i class="fa fa-trash"></i> delete
+                  </button>
+                </div>
                 <div class="user-info">
                   <div class="wrapper">
-                    <a href="user/">
+                    <a href="">
                       <div class="inner">
                         <img
-                          src="/dist/img/avatars/avatar-male-4.jpg"
+                          src="/dist/img/avatars/avatar-female-2.jpg"
                           class="user-img"
                           alt=""
                         />
-                        <p class="username">paul pens</p>
+                        <p class="username">mary jane</p>
                       </div>
                     </a>
                   </div>
                 </div>
               </div>
-              <a href="article.html">
+              <a href="">
                 <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
               </a>
               <p class="article-message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate optio excepturi fugit, molestiae labore maxime quae
-                velit ratione quos accusantium...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                ullam?
               </p>
+
+              <p class="status">status: <span>draft</span></p>
+
               <div class="date-views">
                 <p class="date"><i class="fa fa-calendar"></i> 2020/09/22</p>
                 <p class="date"><i class="fa fa-comment"></i> 44</p>
                 <p class="views"><i class="fa fa-eye"></i> 10K viewers</p>
               </div>
-              <a href="article.html" class="btn-outline txt-center">read more</a>
+
+              <a href="" class="btn-outline txt-center">read more</a>
             </div>
             <!-- article -->
 
+
+
+            <!-- article -->
             <div class="article">
               <div class="img-wrapper">
-                <a href="article.html">
+                <a href="">
                   <img
-                    src="/dist/img/articles/full_moon_reflection-wallpaper-1280x1024.jpg"
+                    src="/dist/img/articles/beach_sunrise-wallpaper-1280x1024.jpg"
                     class="article-img"
                     alt=""
                   />
@@ -277,62 +293,54 @@
                 <button class="btn-normal rest-width ellipsis">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
                 </button>
-              <div class="functions">
-                
-
-                <button class="ed btn-normal rest-width">
-                  <i class="fa fa-edit"></i> edit
-                </button>
-                <button class="del btn-normal rest-width">
-                  <i class="fa fa-trash"></i> delete
-                </button>
-              </div>
+                <div class="functions">
+                  <button class="ed btn-normal rest-width">
+                    <i class="fa fa-edit"></i> edit
+                  </button>
+                  <button class="del btn-normal rest-width">
+                    <i class="fa fa-trash"></i> delete
+                  </button>
+                </div>
                 <div class="user-info">
                   <div class="wrapper">
-                    <a href="user/">
+                    <a href="">
                       <div class="inner">
                         <img
-                          src="/dist/img/avatars/Promo-Instagram-Instagram ad square.jpeg"
+                          src="/dist/img/avatars/avatar-female-2.jpg"
                           class="user-img"
                           alt=""
                         />
-                        <p class="username">chris davis</p>
+                        <p class="username">mary jane</p>
                       </div>
                     </a>
                   </div>
                 </div>
               </div>
-              <a href="article.html">
+              <a href="">
                 <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
               </a>
               <p class="article-message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate optio excepturi fugit, molestiae labore maxime quae
-                velit ratione quos accusantium...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+                ullam?
               </p>
+
+              <p class="status">status: <span>draft</span></p>
+
               <div class="date-views">
                 <p class="date"><i class="fa fa-calendar"></i> 2020/09/22</p>
                 <p class="date"><i class="fa fa-comment"></i> 44</p>
                 <p class="views"><i class="fa fa-eye"></i> 10K viewers</p>
               </div>
-              <a href="article.html" class="btn-outline txt-center">read more</a>
+
+              <a href="" class="btn-outline txt-center">read more</a>
             </div>
             <!-- article -->
 
           </div>
           <!-- article cards end -->
-        </div>
-        <!-- container end -->
-      </section>
-      <!-- home article cards end -->
 
-
-      <!-- home pagination start -->
-      <section id="home-pagination" class="my-2">
-          <!--  container start -->
-        <div class="container">
           <!-- pagination -->
-          <div class="pagination">
+          <div class="pagination my-2">
             <button class="btn-outline">
               <i class="fa fa-arrow-left"></i>
             </button>
@@ -370,14 +378,12 @@
           </div>
           <!-- pagination -->
         </div>
-          <!--  container start -->
+ <!-- container end -->
 
       </section>
-
-      <!-- home pagination start -->
+      <!-- user profile end -->
 
     </main>
-
     <!-- main end -->
 
 
@@ -447,10 +453,9 @@
     <!-- footer end -->
 
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+
+
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
-
-
-

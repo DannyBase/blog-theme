@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>please Login</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script defer src="js/all.min.js"></script>
+  </head>
+  <body class="bg-dark">
+    <form action="" id="fill-form" class="my-1 login">
+      <div class="container-lg">
+        <h1 class="form-title txt-light my-1">Welcome back!</h1>
+
+        <p class="lead">
+          remember to use your registed email and ensure a secure password for
+          account access.
+        </p>
+
+        <div class="form-group my-2">
+          <input type="email" name="" id="" placeholder="email" />
+          <i class="fa fa-envelope"></i>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            name=""
+            id="password-input"
+            placeholder="password"
+            oninput="showEyeIcon()"
+          />
+          <i class="fa fa-lock"></i>
+          <button
+            class="btn-eye btn-eye-1 rest-width"
+            type="button"
+            onclick="changType()"
+          >
+            <i class="fa fa-eye-slash"></i>
+          </button>
+          <button
+            class="btn-eye btn-eye-2 rest-width"
+            type="button"
+            onclick="unChange()"
+          >
+            <i class="fa fa-eye"></i>
+          </button>
+        </div>
+
+        <div class="custom-checkbox-wrapper wrapper-login">
+          <div class="form-group">
+            <input type="checkbox" id="service" class="custom-checkbox" />
+            <label for="service" class="txt-accent">remember me</label>
+          </div>
+
+          <div class="form-group">
+            <a href="" class="txt-primary">forget password?</a>
+          </div>
+        </div>
+
+        <button class="btn-primary my-2">sign up</button>
+
+        <p class="text-center next-form lead">
+          don't have an account?<a href="" class="txt-primary">sign up</a>
+        </p>
+      </div>
+    </form>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

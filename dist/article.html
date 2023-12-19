@@ -4,200 +4,275 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome To Blogly</title>
+    <title>Article</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <script defer src="js/all.min.js"></script>
   </head>
   <body class="bg-dark">
-    <!-- header -->
+    
+    <!-- header start -->
     <header>
-      <!-- container -->
+      <!-- container start -->
       <div class="container">
-        <!-- navbar -->
+        <!-- navbar  start -->
         <nav class="nav-bar">
-          <div class="step-1">
-            <a href="" class="btn-light write">
-              <i class="fa fa-pen"></i> write article
-            </a>
-            <a href="">
-              <h3 class="logo txt-light">blogly</h3>
-            </a>
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <img
-                    src="/dist/img/Promo-Instagram-Instagram ad square.jpeg"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="fa-regular fa-bell"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="step-2">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="" class="nav-link current">home</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">about us</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">services</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">contact us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <!-- navbar -->
-
-      <div class="container">
-        <div class="blog-search-category my-2">
-          <div class="input-wrapper">
-            <input
-              type="text"
-              placeholder="search..."
-              class="bg-secondary txt-light"
-            />
-            <i class="fa fa-search search-icon txt-light"></i>
-          </div>
-          <ul class="category-list">
-            <li class="category-item">
-              <a href="" class="category-link">all</a>
+          <a href="index.html"> 
+            <h3 class="logo">blogly</h3>
+          </a>
+          <ul class="hide-md">
+            <button class="btn-normal rest-width hide-lg" onclick="hideNav()">
+              <i class="fa fa-times"></i>
+            </button>
+            <li>
+              <a href="index.html">home</a>
             </li>
-            <li class="category-item">
-              <a href="" class="category-link">lifestyle</a>
+            <li>
+              <a href="categories.html">categories</a>
             </li>
-            <li class="category-item">
-              <a href="" class="category-link current">technology</a>
+            <li>
+              <a href="about.html">about us</a>
             </li>
-            <li class="category-item">
-              <a href="" class="category-link">sport</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">fashion</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">programming</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">food</a>
-            </li>
-            <li class="category-item">
-              <a href="" class="category-link">manifacturing</a>
+            <li>
+              <a href="contact.html">contact us</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </header>
-    <!-- header -->
+          <ul>
+            <li>
+              <button class="rest-width" onchange="showNav()">
+                <i class="fa fa-bars"></i>
+              </button>
+            </li>
+            <li>
+              <a href="user/">
+                <img
+                  src="/dist/img/avatars/avatar-female-2.jpg"
+                  alt="user image"
+                />
+              </a>
+            </li>
+            <li class="notification">
+              <a href="user/notification.html">
+                <i class="fa fa-bell bell"></i>
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    <!-- navbar end -->
 
-    <!-- section b article cards -->
 
-    <section id="article-a" class="my-3">
-      <!-- container -->
-      <div class="container">
-        <!-- article cards -->
-        <div class="article">
-          <div class="img-wrapper">
-            <img
-              src="/dist/img/death_valley-wallpaper-1280x1024.jpg"
-              class="article-img"
-              alt=""
-            />
-            <div class="user-info">
-              <div class="wrapper">
-                <a href="">
-                  <div class="inner">
-                    <img
-                      src="/dist/img/Promo-Instagram-Instagram ad square.jpeg"
-                      class="user-img"
-                      alt=""
-                    />
-                    <p class="username">daniel james</p>
-                  </div>
-                </a>
-              </div>
+        <div class="write-search">
+          <div class="container">
+            <div class="inner">
+              <a href=""><i class="fa fa-plus" title="Write article"></i> </a>
+              <button class="rest-width" title="Search article">
+                <i class="fa fa-search"></i>
+              </button>
             </div>
           </div>
-          <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
-          <p class="article-message">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error esse
-            quia maiores nihil minus dolorum laudantium architecto iure velit
-            modi voluptas ad dolores hic atque eum ex possimus ipsam, tenetur
-            facere tempore fugiat cumque magni ipsum unde? Dolorum beatae aut
-            sunt ea rem minus necessitatibus dolor? Magni vero ad ea, harum
-            debitis consequatur dicta ullam libero nihil, quae, voluptatibus
-            accusantium perferendis fuga! Voluptatibus repellat commodi
-            consectetur, nostrum deleniti minima eius non corrupti! Recusandae a
-            itaque dolor asperiores aspernatur eveniet quia tempore nobis
-            laudantium fugiat aperiam nesciunt, ipsam numquam excepturi
-            reiciendis voluptatibus distinctio nostrum perferendis vitae
-            expedita, cum inventore, laboriosam error?
-          </p>
-          <div class="date-views">
-            <p class="views"><i class="fa fa-eye"></i> 10K viewers</p>
-          </div>
-          <div class="date-categories my-2 py-1">
-            <p class="date txt-accent">
-              <i class="fa fa-calendar"></i> 2020/09/22
+        </div>
+
+
+      </div>
+    <!-- container end -->
+
+    </header>
+    <!-- header end -->
+
+
+
+
+       <!-- main start -->
+    <main>
+      <section id="article-article-card" class="my-3">
+        <!-- container -->
+        <div class="container">
+            
+          <!-- article cards -->
+          <div class="article">
+            <div class="img-wrapper">
+              <img
+                src="/dist/img/articles/death_valley-wallpaper-1280x1024.jpg"
+                class="article-img"
+                alt=""
+              />
+              <button class="btn-normal rest-width ellipsis">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            <div class="functions">
+
+              <button class="ed btn-normal rest-width">
+                <i class="fa fa-edit"></i> edit
+              </button>
+              <button class="del btn-normal rest-width">
+                <i class="fa fa-trash"></i> delete
+              </button>
+            </div>
+              <div class="user-info">
+                <div class="wrapper">
+                  <a href="user/">
+                    <div class="inner">
+                      <img
+                        src="/dist/img/avatars/avatar-female-2.jpg"
+                        class="user-img"
+                        alt=""
+                      />
+                      <p class="username">mary jane</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+            <p class="article-message">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+              esse quia maiores nihil minus dolorum laudantium architecto iure
+              velit modi voluptas ad dolores hic atque eum ex possimus ipsam,
+              tenetur facere tempore fugiat cumque magni ipsum unde? Dolorum
+              beatae aut sunt ea rem minus necessitatibus dolor? Magni vero ad
+              ea, harum debitis consequatur dicta ullam libero nihil, quae,
+              voluptatibus accusantium perferendis fuga! Voluptatibus repellat
+              commodi consectetur, nostrum deleniti minima eius non corrupti!
+              Recusandae a itaque dolor asperiores aspernatur eveniet quia
+              tempore nobis laudantium fugiat aperiam nesciunt, ipsam numquam
+              excepturi reiciendis voluptatibus distinctio nostrum perferendis
+              vitae expedita, cum inventore, laboriosam error?
             </p>
-            <ul class="category-list">
-              <li class="category-item">
-                <a href="" class="category-link btn-primary">technology</a>
-              </li>
-              <li class="category-item">
-                <a href="" class="category-link btn-primary">lifestyle</a>
-              </li>
-              <li class="category-item">
-                <a href="" class="category-link btn-primary">fashion</a>
-              </li>
-            </ul>
+            <div class="date-views txt-accent">
+              <p class="views"><i class="fa fa-eye"></i> 10K viewers</p>
+            </div>
+            <div class="date-categories my-2 py-1">
+              <p class="date txt-accent">
+                <i class="fa fa-calendar"></i> 2020/09/22
+              </p>
+              <ul class="category-list">
+                <li class="category-item">
+                  <a href="" class="category-link btn-primary">technology</a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-link btn-primary">lifestyle</a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-link btn-primary">fashion</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- container -->
-    </section>
+        <!-- container -->
+      </section>
 
-    <section id="article-b" class="my-3 txt-light">
-      <div class="container">
-        <h1 class="text-center">comments <span class="bg-primary txt-light">4</span></h1>
-        <div class="comment my-2">
-          <img src="/dist/img/Promo-Instagram-Instagram ad square.jpeg" alt="" class="user-img">
-          <div class="inner">  
-          <h3>dan liody</h3>
-          <div class="date-reply">
-            <p class="date">2023/07/12</p>
-            <button class="btn-primary">Reply</button>
+      <section id="article-comments" class="my-3 txt-light">
+        <div class="container">
+          <h1 class="txt-center">
+            comments <span class="bg-primary txt-light">4</span>
+          </h1>
+          <div class="comments-wrapper my-2">  
+          <div class="comment">
+            <img
+              src="/dist/img/avatars/avatar-male-3.jpg"
+              alt=""
+              class="user-img"
+            />
+            <div class="inner">
+              <div class="name-date">
+                <h3>dan liody <sup>.</sup></h3>
+                <p class="date">may, 20</p>
+              </div>
+              <p class="my-1 txt-accent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                obcaecati neque rerum molestias alias maxime, quas repellendus
+                distinctio veniam ab perspiciatis expedita earum, est quos?
+                Voluptas totam qui atque porro.
+              </p>
+            </div>
           </div>
-          <p class="comment my-1 txt-accent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque obcaecati neque rerum molestias alias maxime, quas repellendus distinctio veniam ab perspiciatis expedita earum, est quos? Voluptas totam qui atque porro.
-          </p>
-        </div>
-        </div>
-        <form action="" method="post" class="bg-light px-1 comment-form">
-          <h3 class="text-center txt-dark py-1">add comments</h3>
-          <div class="user-img-comment-field my-1">
-            <img src="../dist/img/Promo-Instagram-Instagram ad square.jpeg" class="user-img" alt="">
-            <textarea name="" id="" cols="30" class="bg-secondary"></textarea>
-          </div>
-          <div class="btn-wrapper py-1"> 
-          <button class="btn-secondary">add comment</button>
-        </div>
-    </form>
-      </div>
-    </section>
 
-    <section id="article-c" class="my-3 bg-secondary py-2">
+          <div class="comment">
+            <img
+              src="/dist/img/avatars/avatar-female-1.jpg"
+              alt=""
+              class="user-img"
+            />
+            <div class="inner">
+              <div class="name-date">
+                <h3>mary crossin <sup>.</sup></h3>
+                <p class="date">2 days ago</p>
+              </div>
+              <p class="my-1 txt-accent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                obcaecati neque rerum molestias alias maxime, quas repellendus
+                distinctio veniam ab perspiciatis expedita earum, est quos?
+                Voluptas totam qui atque porro.
+              </p>
+            </div>
+          </div>
+          <div class="comment">
+            <img
+              src="/dist/img/avatars/avatar-female-6.jpg"
+              alt=""
+              class="user-img"
+            />
+            <div class="inner">
+              <div class="name-date">
+                <h3>jane eva <sup>.</sup></h3>
+                <p class="date">1h ago</p>
+              </div>
+              <p class="my-1 txt-accent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                obcaecati neque rerum molestias alias maxime, quas repellendus
+                distinctio veniam ab perspiciatis expedita earum, est quos?
+                Voluptas totam qui atque porro.
+              </p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <img
+              src="/dist/img/avatars/avatar-male-2.jpg"
+              alt=""
+              class="user-img"
+            />
+            <div class="inner">
+              <div class="name-date">
+                <h3>shang chi <sup>.</sup></h3>
+                <p class="date">1h ago</p>
+              </div>
+              <p class="my-1 txt-accent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                obcaecati neque rerum molestias alias maxime, quas repellendus
+                distinctio veniam ab perspiciatis expedita earum, est quos?
+                Voluptas totam qui atque porro.
+              </p>
+            </div>
+          </div>
+
+        </div>
+          <form action="" method="post" class="bg-light px-1 comment-form">
+            <h3 class="txt-center txt-dark py-1">add comments</h3>
+            <div class="user-img-comment-field my-1">
+              <img
+                src="../dist/img/avatars/avatar-female-2.jpg"
+                class="user-img"
+                alt=""
+              />
+              <textarea name="" id="" cols="30" class="bg-secondary"></textarea>
+            </div>
+            <div class="btn-wrapper py-1">
+              <button class="btn-secondary">add comment</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+       <!-- main end -->
+
+
+     <!-- newsletter start -->
+
+     <newsletter id="article-new-letter" class="my-3 bg-secondary py-2">
       <div class="container">
         <div class="new-letter-wrapper">
           <div class="new-info">
@@ -209,23 +284,29 @@
           </div>
           <form action="">
             <label for="email" class="txt-accent">email</label>
-            <div class="input-wrapper">
+            <div class="form-group">
               <div class="inner-input-wrapper">
                 <input
                   type="email"
                   placeholder="Example303@gmail.com"
-                  class="txt-accent bg-dark"
+                  class="bg-dark"
                 />
                 <i class="fa fa-envelope email txt-light"></i>
               </div>
-              <button class="btn-primary">Subcrible</button>
+              <button class="btn-primary rest-width">Subcrible</button>
             </div>
           </form>
         </div>
       </div>
-    </section>
+    </newsletter>
 
-    <footer class="my-2">
+    <!-- newsletter end -->
+
+
+
+    <!-- footer start -->
+
+    <footer class="my-1">
       <div class="container">
         <nav class="footer-nav">
           <ul class="nav-list">
@@ -251,6 +332,11 @@
         </nav>
       </div>
     </footer>
+
+    <!-- footer end -->
+
+
+
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
